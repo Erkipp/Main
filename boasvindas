@@ -1,0 +1,5 @@
+print("Digite seu nome")
+Nome=input()
+print("Qual a sua cidade?")
+Cidade=input()
+print("Seja bem vindo,", Nome,"de", Cidade,"!")
