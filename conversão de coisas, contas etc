@@ -5,3 +5,11 @@ print(idade + 1 )
 
 idade=int(input("Digite sua idade: "))
 print("No seu próximo aniversário, terá:",idade + 1 )
+
+#Contas
+
+print(10 + 5)
+print(10 - 5)
+print(10 * 5)
+print(10 / 5)
+print(2 ** 3)
