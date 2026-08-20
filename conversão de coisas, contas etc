@@ -21,7 +21,7 @@ numero2 = int(input("Digite o segundo número:"))
 soma = numero1 + numero2
 print("Resultado:",soma)
 
-#Calculadora
+#Calculadora(Nao completo)
 numero1 = int(input("Digite o primeiro número:"))
 numero2 = int(input("Digite o segundo número:"))
 print("[1] Soma")
@@ -29,7 +29,7 @@ print("[2] Subtração")
 print("[3] Multiplicação")
 print("[4] Divisão")
 print("[5] Potênciação")
-operação = input("Escolha a operação desejada:")
+operação = (int(input("Escolha a operação desejada:")))
 if operação == "1":
  print(numero1 + numero2)
 if operação == "2":
@@ -40,3 +40,6 @@ if operação == "4":
  print(numero1 / numero2)
 if operação == "5":
  print(numero1 ** numero2)
+else:
+    while (operação > 5 or < 1):
+     print("Escolha entre: 1,2,3,4 ou 5")
