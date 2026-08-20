@@ -13,3 +13,31 @@ print("Subtração:",10 - 5)
 print("Multiplicação:",10 * 5)
 print("Divisão:",10 / 5)
 print("Potência:",2 ** 3)
+
+#Calculadoras
+
+numero1 = int(input("Digite o primeiro número:"))
+numero2 = int(input("Digite o segundo número:"))
+soma = numero1 + numero2
+print("Resultado:",soma)
+
+#Calculadora
+numero1 = int(input("Digite o primeiro número:"))
+numero2 = int(input("Digite o segundo número:"))
+print("Qual operação você quer?")
+print("[1] Soma")
+print("[2] Subtração")
+print("[3] Multiplicação")
+print("[4] Divisão")
+print("[5] Potênciação")
+operação = input("Qual sua escolha? Digite:")
+if operação == "1":
+ print(numero1 + numero2)
+if operação == "2":
+ print(numero1 - numero2)
+if operação == "3":
+ print(numero1 * numero2)
+if operação == "4":
+ print(numero1 / numero2)
+if operação == "5":
+ print(numero1 ** numero2)
