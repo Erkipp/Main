@@ -8,8 +8,8 @@ print("No seu próximo aniversário, terá:",idade + 1 )
 
 #Contas
 
-print(10 + 5)
-print(10 - 5)
-print(10 * 5)
-print(10 / 5)
-print(2 ** 3)
+print("Adição:",10 + 5)
+print("Subtração:",10 - 5)
+print("Multiplicação:",10 * 5)
+print("Divisão:",10 / 5)
+print("Potência:",2 ** 3)
