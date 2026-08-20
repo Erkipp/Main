@@ -4,7 +4,7 @@ print("Qual a sua cidade?")
 Cidade=input()
 print("Seja bem vindo,", Nome,"de", Cidade,"!")
 
--- Versão atualizada
+#Versão atualizada
 
 Nome=input("Digite seu nome: ")
 Cidade=input("Qual a sua cidade? ")
