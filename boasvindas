@@ -15,3 +15,7 @@ print("Seja bem vindo,", Nome,"de", Cidade,"!")
 Nome=input("Nome: ")
 Cidade=input("Cidade: ")
 print(Nome + " mora em " + Cidade)
+
+Nome=input("Nome: ")
+Cidade=input("Cidade: ")
+print(f"{Nome} mora em {Cidade}")
