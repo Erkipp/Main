@@ -1,0 +1,6 @@
+#Exercicio usando a função de conversão float
+
+Base = int(input("Qual a base do retângulo? "))
+Altura = int(input("Qual a altura do retângulo? "))
+Área = Altura * Base
+print("A Área do retângulo é:", Área)
