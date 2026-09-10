@@ -26,3 +26,11 @@ elif nota >= 5:
     print("Recuperação!")
 else:
     print("Reprovado!")
+
+#ImparouparDesafio2^2
+numero= int(input("Digite o número: "))
+
+if numero % 2 == 0:
+    print("Seu número é par.")
+else:
+    print("Seu número é impar.")
