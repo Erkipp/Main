@@ -1,0 +1,32 @@
+INSERT INTO disciplina (codigo_disciplina, descricao)
+VALUES ('BD', 'Banco de Dados');
+
+INSERT INTO disciplina (codigo_disciplina, descricao)
+VALUES ('EN', 'Inglês');
+
+INSERT INTO professor (codigo, nome, codigo_disciplina)
+VALUES (1, 'Charles Caleiro', 'BD');
+
+INSERT INTO professor (codigo, nome, codigo_disciplina)
+VALUES (2, 'Tiago Vieira', 'EN');
+
+INSERT INTO turma (codigo, nome_turma) VALUES ('701MAT',
+'Sétima Série Um Matutino');
+
+INSERT INTO turma (codigo, nome_turma) VALUES ('702MAT',
+'Sétima Série Dois Matutino');
+
+INSERT INTO turma (codigo, nome_turma) VALUES ('801MAT',
+'Oitava Série Um Matutino');
+
+INSERT INTO turma (codigo, nome_turma) VALUES ('802VES',
+'Oitava Série Dois Vespertino');
+
+INSERT INTO turma (codigo, nome_turma) VALUES ('901MAT',
+'Nona Série Um Matutino');
+
+INSERT INTO turma (codigo, nome_turma) VALUES ('902VES',
+'Nona Série Dois Vespertino');
+
+INSERT INTO turma (codigo, nome_turma) VALUES ('101INFO',
+'Primeiro Ano Um Técnico em Informática');
