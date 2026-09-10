@@ -1,0 +1,28 @@
+#Desafio
+
+idade = int(input("Qual a sua idade? "))
+
+if idade >= 18:
+ print("Você pode entrar.")
+else:
+ print("Entrada não permitida.")
+
+
+  
+  #coisa
+  idade = int(input("Digite sua idade: "))
+
+if idade >= 18:
+ print("Você é maior de idade.")
+else:
+    print("Você é menor de idade")
+
+  #notas
+  nota = float(input("Digite sua nota:"))
+
+if nota >= 7:
+    print("Aprovado!")
+elif nota >= 5:
+    print("Recuperação!")
+else:
+    print("Reprovado!")
