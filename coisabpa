@@ -53,3 +53,35 @@ INSERT INTO turma (codigo, nome_turma) VALUES ('302EDF', 'Terceiro Ano Dois Téc
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (1, 'Gabriel Souza', 13, '701MAT');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (2, 'Ana Beatriz Lima', 13, '702MAT');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (3, 'Lucas Oliveira', 14, '801MAT');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (1, 'Gabriel Souza', 13, '701MAT');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (2, 'Ana Beatriz Lima', 13, '702MAT');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (3, 'Lucas Oliveira', 14, '801MAT');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (4, 'Maria Eduarda Santos', 14, '802VES');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (5, 'Pedro Henrique Costa', 15, '901MAT');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (6, 'Isabela Ferreira', 15, '902VES');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (7, 'Matheus Almeida', 15, '101INFO');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (8, 'Sophia Rodrigues', 16, '102LOG');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (9, 'Guilherme Pereira', 16, '104LOG');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (10, 'Laura Martins', 16, '106INFO');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (11, 'Rafael Carvalho', 16, '201SST');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (12, 'Julia Gomes', 17, '201EDF');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (13, 'Bruno Ribeiro', 17, '202INFO');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (14, 'Beatriz Barbosa', 17, '301POR');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (15, 'Enzo Araújo', 18, '302EDF');
+
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (16, 'Manuela Dias', 13, '701MAT');
