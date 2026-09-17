@@ -1,0 +1,26 @@
+#Operador AND
+
+idade = 20
+tem_ingresso = True
+if idade >= 18 and tem_ingresso:
+    print("Entrada permitida")
+else:
+    print("Entrada não permitida")
+
+#Operador OR
+
+tem_dinheiro = True
+tem_cartão = False
+if tem_dinheiro or tem_cartão:
+    print("Pagamento possivel")
+else:
+    print("Não é possivel realizar o pagamento")
+
+#Combinando operadores
+
+Nota= float(input("Digite a nota: "))
+frequencia = float(input("Digite a frequencia (%): "))
+if Nota >= 7 and frequencia >= 75:
+    print("Aluno aprovado")
+else:
+    print("Aluno não aprovado")
