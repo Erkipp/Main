@@ -1,43 +1,45 @@
-INSERT INTO disciplina (codigo_disciplina, descricao)
-VALUES ('BD', 'Banco de Dados');
+CREATE TABLE disciplina (
+    codigo_disciplina VARCHAR2(5) PRIMARY KEY,
+    descricao VARCHAR2(50) NOT NULL
+);
 
-INSERT INTO disciplina (codigo_disciplina, descricao)
-VALUES ('EN', 'Inglês');
+CREATE TABLE professor (
+    codigo NUMBER PRIMARY KEY,
+    nome VARCHAR2(100) NOT NULL,
+    codigo_disciplina VARCHAR2(5) NOT NULL,
+    constraint fk_professor_disciplina FOREIGN KEY (codigo_disciplina)
+    references disciplina (codigo_disciplina)
+);
 
-INSERT INTO professor (codigo, nome, codigo_disciplina)
-VALUES (1, 'Charles Caleiro', 'BD');
+CREATE TABLE turma (
+    codigo VARCHAR2(10) PRIMARY KEY,
+    nome_turma VARCHAR2(20) NOT NULL
+);
 
-INSERT INTO professor (codigo, nome, codigo_disciplina)
-VALUES (2, 'Tiago Vieira', 'EN');
-
-INSERT INTO turma (codigo, nome_turma) VALUES ('701MAT',
-'Sétima Série Um Matutino');
-
-INSERT INTO turma (codigo, nome_turma) VALUES ('702MAT',
-'Sétima Série Dois Matutino');
-
-INSERT INTO turma (codigo, nome_turma) VALUES ('801MAT',
-'Oitava Série Um Matutino');
-
-INSERT INTO turma (codigo, nome_turma) VALUES ('802VES',
-'Oitava Série Dois Vespertino');
-
-INSERT INTO turma (codigo, nome_turma) VALUES ('901MAT',
-'Nona Série Um Matutino');
-
-INSERT INTO turma (codigo, nome_turma) VALUES ('902VES',
-'Nona Série Dois Vespertino');
-
-INSERT INTO turma (codigo, nome_turma) VALUES ('101INFO',
-'Primeiro Ano Um Técnico em Informática');
+CREATE TABLE aluno (
+    codigo NUMBER PRIMARY KEY,
+    nome VARCHAR2(100) NOT NULL,
+    idade NUMBER(2) NOT NULL,
+    turma VARCHAR2(10) NOT NULL,
+    constraint fk_aluno_turma FOREIGN KEY (turma)
+    references turma (codigo)
+);
 
 
 
-------
+
+INSERT INTO disciplina (codigo_disciplina, descricao) VALUES ('BD', 'Banco de Dados');
+INSERT INTO disciplina (codigo_disciplina, descricao) VALUES ('EN', 'Inglês');
+
+
+INSERT INTO professor (codigo, nome, codigo_disciplina) VALUES (1, 'Charles Caleiro', 'BD');
+INSERT INTO professor (codigo, nome, codigo_disciplina) VALUES (2, 'Tiago Vieira', 'EN');
+
 
 INSERT INTO turma (codigo, nome_turma) VALUES ('701MAT', 'Sétima Série Um Matutino');
 INSERT INTO turma (codigo, nome_turma) VALUES ('702MAT', 'Sétima Série Dois Matutino');
 INSERT INTO turma (codigo, nome_turma) VALUES ('801MAT', 'Oitava Série Um Matutino');
+INSERT INTO turma (codigo, nome_turma) VALUES ('802VES', 'Oitava Série Dois Vespertino');
 INSERT INTO turma (codigo, nome_turma) VALUES ('901MAT', 'Nona Série Um Matutino');
 INSERT INTO turma (codigo, nome_turma) VALUES ('902VES', 'Nona Série Dois Vespertino');
 INSERT INTO turma (codigo, nome_turma) VALUES ('101INFO', 'Primeiro Ano Um Técnico em Informática');
@@ -50,66 +52,33 @@ INSERT INTO turma (codigo, nome_turma) VALUES ('202INFO', 'Segundo Ano Dois Téc
 INSERT INTO turma (codigo, nome_turma) VALUES ('301POR', 'Terceiro Ano Um Técnico em Portos');
 INSERT INTO turma (codigo, nome_turma) VALUES ('302EDF', 'Terceiro Ano Dois Técnico em Edificações');
 
+
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (1, 'Gabriel Souza', 13, '701MAT');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (2, 'Ana Beatriz Lima', 13, '702MAT');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (3, 'Lucas Oliveira', 14, '801MAT');
-
-INSERT INTO aluno (codigo, nome, idade, turma) VALUES (1, 'Gabriel Souza', 13, '701MAT');
-
-INSERT INTO aluno (codigo, nome, idade, turma) VALUES (2, 'Ana Beatriz Lima', 13, '702MAT');
-
-INSERT INTO aluno (codigo, nome, idade, turma) VALUES (3, 'Lucas Oliveira', 14, '801MAT');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (4, 'Maria Eduarda Santos', 14, '802VES');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (5, 'Pedro Henrique Costa', 15, '901MAT');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (6, 'Isabela Ferreira', 15, '902VES');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (7, 'Matheus Almeida', 15, '101INFO');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (8, 'Sophia Rodrigues', 16, '102LOG');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (9, 'Guilherme Pereira', 16, '104LOG');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (10, 'Laura Martins', 16, '106INFO');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (11, 'Rafael Carvalho', 16, '201SST');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (12, 'Julia Gomes', 17, '201EDF');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (13, 'Bruno Ribeiro', 17, '202INFO');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (14, 'Beatriz Barbosa', 17, '301POR');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (15, 'Enzo Araújo', 18, '302EDF');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (16, 'Manuela Dias', 13, '701MAT');
-
------
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (17, 'Miguel Nascimento', 13, '702MAT');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (18, 'Alice Monteiro', 14, '801MAT');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (19, 'Davi Cardoso', 14, '802VES');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (20, 'Valentina Teixeira', 15, '901MAT');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (21, 'Arthur Correia', 15, '902VES');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (22, 'Lorena Pinto', 15, '101INFO');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (23, 'Heitor Moreira', 16, '102LOG');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (24, 'Yasmin Cavalcante', 16, '104LOG');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (25, 'Theo Rocha', 16, '106INFO');
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (26, 'Helena Batista', 16, '201SST');
-
--+------
-
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (27, 'Bernardo Freitas', 17, '201INFO');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (28, 'Livia Nunes', 17, '202INFO');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (29, 'Vinícius Machado', 17, '301POR');
@@ -124,3 +93,4 @@ INSERT INTO aluno (codigo, nome, idade, turma) VALUES (37, 'Caio Fonseca', 15, '
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (38, 'Fernanda Melo', 16, '102LOG');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (39, 'João Vitor Tavares', 16, '104LOG');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (40, 'Rebeca Andrade', 16, '106INFO');
+
