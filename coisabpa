@@ -79,7 +79,7 @@ INSERT INTO aluno (codigo, nome, idade, turma) VALUES (23, 'Heitor Moreira', 16,
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (24, 'Yasmin Cavalcante', 16, '104LOG');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (25, 'Theo Rocha', 16, '106INFO');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (26, 'Helena Batista', 16, '201SST');
-INSERT INTO aluno (codigo, nome, idade, turma) VALUES (27, 'Bernardo Freitas', 17, '201INFO');
+INSERT INTO aluno (codigo, nome, idade, turma) VALUES (27, 'Bernardo Freitas', 17, '201EDF');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (28, 'Livia Nunes', 17, '202INFO');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (29, 'Vinícius Machado', 17, '301POR');
 INSERT INTO aluno (codigo, nome, idade, turma) VALUES (30, 'Larissa Reis', 18, '302EDF');
