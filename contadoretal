@@ -11,3 +11,19 @@ while contador <= 10:
  print(contador)
  contador = contador + 1
  time.sleep(1)
+
+#Contador regressivo
+contador = 10
+while contador >= 0:
+ print(contador)
+ contador = contador - 1
+print("Feliz Ano Novo!")
+
+#Contador regressivo com intervalo
+import time
+contador = 10
+while contador >= 0:
+ print(contador)
+ contador = contador - 1
+ time.sleep(1)
+print("Feliz Ano Novo!")
