@@ -1,0 +1,24 @@
+--1 
+ SELECT a.nome AS aluno, t.nome_turma
+ FROM  aluno a
+ inner join turma t ON a.turma = t.codigo;
+
+ --2 
+ SELECT t.nome_turma, count(a.nome) AS quantidade_alunos
+ FROM  turma t
+ left join aluno a ON t.codigo = a.turma GROUP BY t.nome_turma;
+
+ --3
+  SELECT p.nome as professor, d.descricao
+ FROM  PROFESSOR p
+ right join DISCIPLINA d ON p.CODIGO_DISCIPLINA = d.CODIGO_DISCIPLINA;
+
+ --4
+ SELECT a.nome AS aluno, t.nome_turma
+ FROM  aluno a
+ inner join turma t ON a.turma = t.codigo WHERE a.idade > 15;
+
+ --5
+   SELECT d.descricao
+ FROM  disciplina d
+ right join professor p ON p.CODIGO_DISCIPLINA = d.CODIGO_DISCIPLINA where p.CODIGO_DISCIPLINA is null;
