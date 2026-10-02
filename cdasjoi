@@ -11,7 +11,7 @@
  --3 - Professores e descrição de disciplina
   SELECT p.nome as professor, d.descricao
  FROM  PROFESSOR p
- right join DISCIPLINA d ON p.CODIGO_DISCIPLINA = d.CODIGO_DISCIPLINA;
+ inner join DISCIPLINA d ON p.CODIGO_DISCIPLINA = d.CODIGO_DISCIPLINA;
 
  --4 - Alunos com idade maior que 15, junto com a turma
  SELECT a.nome AS aluno, t.nome_turma
