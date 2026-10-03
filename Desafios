@@ -7,9 +7,8 @@ if idade >= 18:
 else:
  print("Entrada não permitida.")
 
-
-  
-  #coisa
+#Alternativa
+ 
   idade = int(input("Digite sua idade: "))
 
 if idade >= 18:
@@ -17,7 +16,8 @@ if idade >= 18:
 else:
     print("Você é menor de idade")
 
-  #notas
+ #Nota
+ 
   nota = float(input("Digite sua nota:"))
 
 if nota >= 7:
@@ -27,7 +27,8 @@ elif nota >= 5:
 else:
     print("Reprovado!")
 
-#ImparouparDesafio2^2
+#Impar ou par
+     
 numero= int(input("Digite o número: "))
 
 if numero % 2 == 0:
