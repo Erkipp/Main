@@ -1,4 +1,4 @@
-#Exercicio usando a função de conversão float
+#Exercicio usando int e multiplicação 
 
 Base = int(input("Qual a base do retângulo? "))
 Altura = int(input("Qual a altura do retângulo? "))
