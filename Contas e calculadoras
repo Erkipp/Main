@@ -1,10 +1,11 @@
 idade=int(input("Digite sua idade: "))
 print(idade + 1 )
 
-  #Outra versão
+#Outra versão
 
 idade=int(input("Digite sua idade: "))
 print("No seu próximo aniversário, terá:",idade + 1 )
+
 
 #Contas
 
@@ -14,14 +15,15 @@ print("Multiplicação:",10 * 5)
 print("Divisão:",10 / 5)
 print("Potência:",2 ** 3)
 
-#Calculadoras
+
+#Calculadora
 
 numero1 = int(input("Digite o primeiro número:"))
 numero2 = int(input("Digite o segundo número:"))
 soma = numero1 + numero2
 print("Resultado:",soma)
 
-#Calculadora(Nao completo)
+#Calculadora ( Projeto pessoal )
 numero1 = int(input("Digite o primeiro número:"))
 numero2 = int(input("Digite o segundo número:"))
 print("[1] Soma")
@@ -40,6 +42,3 @@ if operação == "4":
  print(numero1 / numero2)
 if operação == "5":
  print(numero1 ** numero2)
-else:
-    while (operação > 5 or < 1):
-     print("Escolha entre: 1,2,3,4 ou 5")
