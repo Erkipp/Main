@@ -1,0 +1,36 @@
+-- 1
+SELECT nome, idade
+FROM aluno
+WHERE idade = (SELECT idade FROM aluno  WHERE nome = 'Julia Gomes');
+
+-- 1.1
+
+SELECT nome, idade
+FROM aluno
+WHERE idade IN (SELECT idade FROM aluno  WHERE nome LIKE 'A%') AND  nome  LIKE 'A%'
+
+-- 2
+
+SELECT nome
+FROM aluno
+WHERE turma IN (SELECT codigo_turma FROM turma_disciplina  WHERE codigo_disciplina = 'BD');
+
+-- 2.1
+
+SELECT nome
+FROM aluno
+WHERE turma IN (SELECT codigo_turma FROM turma_disciplina  WHERE codigo_disciplina = 'BD' OR  codigo_disciplina = 'EN');
+
+-- 2.1.1
+
+SELECT nome
+FROM aluno a
+WHERE turma IN (SELECT codigo_turma FROM turma_disciplina  WHERE codigo_disciplina IN  ('BD', 'EN'));
+
+-- 2.2
+
+SELECT nome, turma, (SELECT nome_turma  FROM  turma t WHERE t.codigo = a.turma)
+FROM aluno a
+WHERE turma IN (SELECT codigo_turma FROM turma_disciplina  WHERE codigo_disciplina IN  ('BD', 'EN'));
+
+---
